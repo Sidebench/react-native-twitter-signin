@@ -9,11 +9,11 @@ Pod::Spec.new do |s|
   s.homepage    = package['homepage']
   s.license     = package['license']
   s.author      = 'Justin Nguyen'
-  s.platform    = :ios, "9.0"
+  s.platform    = :ios, "14.4"
   s.source      = { :git => "https://github.com/mrnickel/react-native-twitter-signin.git", :tag => "#{s.version}" }
 
   s.source_files  = "ios/*.{h,m}"
 
-  s.dependency "React"
+  s.dependency "React-Core"
   s.dependency "TwitterKit", "~> 3.3"
 end
